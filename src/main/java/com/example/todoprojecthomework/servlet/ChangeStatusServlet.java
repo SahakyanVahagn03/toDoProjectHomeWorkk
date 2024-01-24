@@ -29,7 +29,7 @@ public class ChangeStatusServlet extends HttpServlet {
                     TO_DO_MANAGER.changeToDoStatus(Status.DONE,  Integer.parseInt(toDoId));
                 }else {
                     TO_DO_MANAGER.changeToDoStatus(Status.NEW,  Integer.parseInt(toDoId));
-                }
+                }//
             }
         }
     }
