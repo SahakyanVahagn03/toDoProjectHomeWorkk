@@ -31,6 +31,8 @@ public class ChangeStatusServlet extends HttpServlet {
                     TO_DO_MANAGER.changeToDoStatus(Status.NEW,  Integer.parseInt(toDoId));
                 }//
             }
+            resp.sendRedirect("/myToDo");
+
         }
     }
 }
