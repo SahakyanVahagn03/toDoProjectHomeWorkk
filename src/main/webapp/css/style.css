@@ -1,0 +1,156 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right top, #ffffff, #deddea, #bdbdd5, #9a9ec1, #7681ae, #6170a4, #4c609a, #335090, #2c468d, #263c89, #233184, #22267f);
+}
+
+
+/*login and register stylesheet*/
+
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .10);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .10);
+    border-radius: 10px;
+}
+
+.login h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login .user {
+    position: relative;
+}
+
+.login .user input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login .user label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login .user input:focus ~ label,
+.login .user input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.login form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .10s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.login a:hover {
+    background: #03770C;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.login a span {
+    position: absolute;
+    display: block;
+}
+
+.login a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(#03770C, transparent, #0E7116);
+    animation: btn-anim1 10s linear infinite;
+}
+
+
+.login a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(#000000, transparent, #000000);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+.login a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(#03770C, transparent, #03770C);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+.btn {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #00BFFF;
+    background-color: #0000FF;
+    background-image: linear-gradient(to top left,
+    rgba(0, 0, 0, .2),
+    rgba(0, 0, 0, .2) 30%,
+    rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.btn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+    inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.register_login-btn {
+    color: white;
+}
